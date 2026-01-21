@@ -1,8 +1,8 @@
 <template>
-    <section>
-        <PublicUbicacionHorariosUbicacionHero />
-        <PublicUbicacionHorariosUbicacionReferencia />
-        <PublicUbicacionHorariosUbicacionFAQ />
-        <PublicUbicacionHorariosUbicacionCta />
-    </section>
+  <section>
+    <PublicUbicacionHorariosUbicacionHero />
+    <PublicUbicacionHorariosUbicacionReferencia />
+    <PublicUbicacionHorariosUbicacionFAQ />
+    <PublicUbicacionHorariosUbicacionCta />
+  </section>
 </template>

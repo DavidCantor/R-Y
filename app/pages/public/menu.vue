@@ -1,11 +1,7 @@
 <template>
   <section>
-    <PublicMenuSectionHeader
-      title="Nuestro menú"
-      subtitle="Platos preparados al momento"
-    />
+    <PublicMenuSectionHeader />
     <LazyPublicMenuCarrusel />
-
-    <LazyPublicMenuPlatosMenu /> 
+    <LazyPublicMenuPlatosMenu />
   </section>
 </template>

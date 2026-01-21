@@ -131,46 +131,39 @@ const filteredDishes = computed(() => {
 <template>
   <section class="py-20 bg-stone-50" id="menu-grid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="flex flex-wrap justify-center gap-3 mb-16">
-        <button 
-          v-for="cat in categories" 
-          :key="cat"
-          @click="activeCategory = cat"
-          :class="[
-            'px-8 py-3 rounded-2xl font-bold transition-all duration-300 border-2 uppercase text-xs tracking-widest',
-            activeCategory === cat 
-              ? 'bg-green-600 border-green-600 text-white shadow-xl shadow-green-200 -translate-y-1' 
-              : 'bg-white border-transparent text-gray-400 hover:text-green-600 hover:bg-green-50'
-          ]"
-        >
+        <button v-for="cat in categories" :key="cat" @click="activeCategory = cat" :class="[
+          'px-8 py-3 rounded-2xl font-bold transition-all duration-300 border-2 uppercase text-xs tracking-widest',
+          activeCategory === cat
+            ? 'bg-green-600 border-green-600 text-white shadow-xl shadow-green-200 -translate-y-1'
+            : 'bg-white border-transparent text-gray-400 hover:text-green-600 hover:bg-green-50'
+        ]">
           {{ cat }}
         </button>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
         <transition-group name="list">
-          <div 
-            v-for="dish in filteredDishes" 
-            :key="dish.id"
-            class="group bg-white rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
-          >
+          <div v-for="dish in filteredDishes" :key="dish.id"
+            class="group bg-white rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
             <div class="relative h-72 overflow-hidden">
-              <img 
-                :src="dish.image" 
-                :alt="dish.name"
-                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-              />
-              <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              <div class="absolute bottom-4 left-6 bg-white px-4 py-2 rounded-xl shadow-lg transform group-hover:-translate-y-2 transition-transform duration-500">
+              <img :src="dish.image" :alt="dish.name"
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              </div>
+
+              <div
+                class="absolute bottom-4 left-6 bg-white px-4 py-2 rounded-xl shadow-lg transform group-hover:-translate-y-2 transition-transform duration-500">
                 <span class="text-green-600 font-black text-xl">${{ dish.price }}</span>
               </div>
             </div>
 
             <div class="p-8">
               <div class="flex gap-2 mb-4">
-                <span v-for="tag in dish.tags" :key="tag" class="text-[9px] uppercase font-bold tracking-tighter px-2 py-1 bg-green-50 text-green-700 rounded-md">
+                <span v-for="tag in dish.tags" :key="tag"
+                  class="text-[9px] uppercase font-bold tracking-tighter px-2 py-1 bg-green-50 text-green-700 rounded-md">
                   {{ tag }}
                 </span>
               </div>
@@ -178,18 +171,25 @@ const filteredDishes = computed(() => {
               <h3 class="text-2xl font-serif font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">
                 {{ dish.name }}
               </h3>
-              
+
               <p class="text-gray-500 text-sm leading-relaxed mb-6 h-12 overflow-hidden line-clamp-2">
                 {{ dish.description }}
               </p>
 
               <div class="flex items-center justify-between pt-6 border-t border-gray-100">
                 <div class="flex items-center text-orange-500">
-                  <svg v-for="i in 5" :key="i" class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                  <svg v-for="i in 5" :key="i" class="w-3 h-3 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
                 </div>
-                <button class="flex items-center space-x-2 text-sm font-bold text-gray-900 hover:text-green-600 transition-colors">
+                <button
+                  class="flex items-center space-x-2 text-sm font-bold text-gray-900 hover:text-green-600 transition-colors">
                   <span>Pedir ahora</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -201,13 +201,21 @@ const filteredDishes = computed(() => {
 </template>
 
 <style scoped>
-.list-enter-active, .list-leave-active { transition: all 0.5s ease; }
-.list-enter-from, .list-leave-to { opacity: 0; transform: translateY(30px); }
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
 
 /* Para que la descripción no rompa el diseño (max 2 líneas) */
 .line-clamp-2 {
   display: -webkit-box;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 </style>

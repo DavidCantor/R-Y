@@ -33,7 +33,7 @@ const handleMouseMove = (e) => {
   if (!isDown.value) return
   e.preventDefault()
   const x = e.pageX - carousel.value.offsetLeft
-  const walk = (x - startX.value) * 2 
+  const walk = (x - startX.value) * 2
   carousel.value.scrollLeft = scrollLeftState.value - walk
 }
 
@@ -48,7 +48,7 @@ const scrollBtn = (direction) => {
 <template>
   <section class="py-24 bg-stone-950 overflow-hidden select-none">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
         <div>
           <h2 class="text-4xl md:text-5xl font-serif font-bold text-white">
@@ -56,50 +56,42 @@ const scrollBtn = (direction) => {
           </h2>
           <p class="text-stone-500 mt-2 text-sm uppercase tracking-widest">Arrastra para explorar la carta</p>
         </div>
-        
+
         <div class="flex gap-4">
-          <button 
-            @click="scrollBtn('left')" 
-            class="w-12 h-12 flex items-center justify-center border-2 border-white/10 rounded-full text-white hover:bg-green-600 hover:border-green-600 transition-all duration-300 active:scale-90"
-          >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" /></svg>
+          <button @click="scrollBtn('left')"
+            class="w-12 h-12 flex items-center justify-center border-2 border-white/10 rounded-full text-white hover:bg-green-600 hover:border-green-600 transition-all duration-300 active:scale-90">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
           </button>
-          <button 
-            @click="scrollBtn('right')" 
-            class="w-12 h-12 flex items-center justify-center border-2 border-white/10 rounded-full text-white hover:bg-green-600 hover:border-green-600 transition-all duration-300 active:scale-90"
-          >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+          <button @click="scrollBtn('right')"
+            class="w-12 h-12 flex items-center justify-center border-2 border-white/10 rounded-full text-white hover:bg-green-600 hover:border-green-600 transition-all duration-300 active:scale-90">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+            </svg>
           </button>
         </div>
       </div>
 
-      <div 
-        ref="carousel"
-        @mousedown="handleMouseDown"
-        @mouseleave="handleMouseUpOrLeave"
-        @mouseup="handleMouseUpOrLeave"
-        @mousemove="handleMouseMove"
-        class="flex gap-6 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing pb-10"
-      >
-        <div 
-          v-for="dish in dishes" 
-          :key="dish.name"
-          class="carousel-item flex-none w-[80%] md:w-105"
-        >
+      <div ref="carousel" @mousedown="handleMouseDown" @mouseleave="handleMouseUpOrLeave"
+        @mouseup="handleMouseUpOrLeave" @mousemove="handleMouseMove"
+        class="flex gap-6 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing pb-10">
+        <div v-for="dish in dishes" :key="dish.name" class="carousel-item flex-none w-[80%] md:w-105">
           <div class="relative aspect-3/4 overflow-hidden rounded-[2.5rem] group border border-white/5">
-            <img 
-              :src="dish.image" 
+            <img :src="dish.image"
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 pointer-events-none"
-              draggable="false"
-            />
-            
-            <div class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent p-10 flex flex-col justify-end">
+              draggable="false" />
+
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent p-10 flex flex-col justify-end">
               <span class="text-green-400 font-bold text-xs uppercase tracking-[0.2em] mb-2">{{ dish.category }}</span>
               <h3 class="text-3xl font-serif font-bold text-white mb-6">{{ dish.name }}</h3>
-              
-              <div class="flex justify-between items-center translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+
+              <div
+                class="flex justify-between items-center translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                 <span class="text-2xl font-black text-white">${{ dish.price }}</span>
-                <span class="px-5 py-2 bg-white/10 backdrop-blur-md text-white text-[10px] uppercase font-bold rounded-full border border-white/20 tracking-widest">
+                <span
+                  class="px-5 py-2 bg-white/10 backdrop-blur-md text-white text-[10px] uppercase font-bold rounded-full border border-white/20 tracking-widest">
                   Ver Detalles
                 </span>
               </div>
@@ -116,6 +108,7 @@ const scrollBtn = (direction) => {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -126,6 +119,7 @@ const scrollBtn = (direction) => {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
   }
+
   .carousel-item {
     scroll-snap-align: center;
   }

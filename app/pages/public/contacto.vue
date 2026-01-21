@@ -1,8 +1,8 @@
 <template>
-    <section>
-        <PublicContactoContactHero />
-        <PublicContactoContactForm />
-        <PublicContactoEventContact />
-        <PublicContactoQuickConnect />
-    </section>
+  <section>
+    <PublicContactoContactHero />
+    <PublicContactoContactForm />
+    <PublicContactoEventContact />
+    <PublicContactoQuickConnect />
+  </section>
 </template>
