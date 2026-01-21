@@ -5,9 +5,9 @@ const isMenuOpen = ref(false)
 
 const navLinks = [
   { name: 'Inicio', path: '/' },
-  { name: 'Menú', path: '/menu' },
-  { name: 'Ubicación y Horarios', path: '/ubicacion' },
-  { name: 'Contacto', path: '/contacto' },
+  { name: 'Menú', path: '/public/menu' },
+  { name: 'Ubicación y Horarios', path: '/public/ubicacion-horarios' },
+  { name: 'Contacto', path: '/public/contacto' },
 ]
 
 const closeMenu = () => {
