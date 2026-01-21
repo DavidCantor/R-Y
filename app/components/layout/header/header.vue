@@ -24,9 +24,9 @@ const closeMenu = () => {
           <NuxtLink to="/" class="flex items-center space-x-3 group">
             <div
               class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center group-hover:bg-green-700 transition-colors">
-              <span class="text-white font-bold text-xl">L</span>
+              <span class="text-white font-bold text-xl">EG</span>
             </div>
-            <span class="text-xl font-bold text-gray-800 tracking-tight">MiNegocio</span>
+            <span class="text-xl font-bold text-gray-800 tracking-tight">Experienzzia gourmet</span>
           </NuxtLink>
         </div>
 

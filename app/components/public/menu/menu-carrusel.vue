@@ -6,13 +6,13 @@ const isDown = ref(false)
 const startX = ref(0)
 const scrollLeftState = ref(0)
 
+// Productos "Estrella" de Experienzzia Gourmet
 const dishes = [
-  { name: 'Corte Wagyu A5', category: 'Especial', price: '45.00', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800' },
-  { name: 'Pasta al Nero di Seppia', category: 'Mariscos', price: '22.00', image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=800' },
-  { name: 'Tuna Tartare Tower', category: 'Entradas', price: '18.50', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800' },
-  { name: 'Pato a la Naranja', category: 'Aves', price: '29.00', image: 'https://images.unsplash.com/photo-1516685018646-527ad952f8d4?q=80&w=800' },
-  { name: 'Esfera de Frambuesa', category: 'Postres', price: '12.00', image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=800' },
-  { name: 'Trufa Blanca Risotto', category: 'Gourmet', price: '34.00', image: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?q=80&w=800' }
+  { name: 'Chocolate Santafereño', category: 'Clásico', price: '12.000', image: 'https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=800' },
+  { name: 'Cesta de Amasijos', category: 'Para Compartir', price: '10.500', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800' },
+  { name: 'Calentado de la Casa', category: 'Desayuno Top', price: '18.900', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800' },
+  { name: 'Brunch Experienzzia', category: 'Especial', price: '22.000', image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=800' },
+  { name: 'Tamal Tolimense', category: 'Tradición', price: '15.000', image: 'https://images.unsplash.com/photo-1593308123721-26756816579c?q=80&w=800' },
 ]
 
 const handleMouseDown = (e) => {
@@ -46,28 +46,28 @@ const scrollBtn = (direction) => {
 </script>
 
 <template>
-  <section class="py-24 bg-stone-950 overflow-hidden select-none">
+  <section class="py-20 bg-gray-900 overflow-hidden select-none">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
         <div>
-          <h2 class="text-4xl md:text-5xl font-serif font-bold text-white">
-            Selección <span class="text-green-500 italic font-light">del Chef</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white">
+            Los Favoritos <span class="text-yellow-400 italic font-light">de Suba</span>
           </h2>
-          <p class="text-stone-500 mt-2 text-sm uppercase tracking-widest">Arrastra para explorar la carta</p>
+          <p class="text-gray-400 mt-2 text-xs uppercase tracking-widest">Desliza para ver nuestras especialidades</p>
         </div>
 
-        <div class="flex gap-4">
+        <div class="flex gap-3">
           <button @click="scrollBtn('left')"
-            class="w-12 h-12 flex items-center justify-center border-2 border-white/10 rounded-full text-white hover:bg-green-600 hover:border-green-600 transition-all duration-300 active:scale-90">
+            class="w-10 h-10 flex items-center justify-center border border-white/20 rounded-full text-white hover:bg-green-600 transition-all">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <button @click="scrollBtn('right')"
-            class="w-12 h-12 flex items-center justify-center border-2 border-white/10 rounded-full text-white hover:bg-green-600 hover:border-green-600 transition-all duration-300 active:scale-90">
+            class="w-10 h-10 flex items-center justify-center border border-white/20 rounded-full text-white hover:bg-green-600 transition-all">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
@@ -75,24 +75,21 @@ const scrollBtn = (direction) => {
 
       <div ref="carousel" @mousedown="handleMouseDown" @mouseleave="handleMouseUpOrLeave"
         @mouseup="handleMouseUpOrLeave" @mousemove="handleMouseMove"
-        class="flex gap-6 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing pb-10">
-        <div v-for="dish in dishes" :key="dish.name" class="carousel-item flex-none w-[80%] md:w-105">
-          <div class="relative aspect-3/4 overflow-hidden rounded-[2.5rem] group border border-white/5">
+        class="flex gap-6 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing pb-6">
+        <div v-for="dish in dishes" :key="dish.name" class="carousel-item flex-none w-[75%] md:w-80">
+          <div class="relative aspect-[4/5] overflow-hidden rounded-3xl group">
             <img :src="dish.image"
-              class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 pointer-events-none"
+              class="absolute inset-0 w-full h-full object-cover pointer-events-none"
               draggable="false" />
 
-            <div
-              class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent p-10 flex flex-col justify-end">
-              <span class="text-green-400 font-bold text-xs uppercase tracking-[0.2em] mb-2">{{ dish.category }}</span>
-              <h3 class="text-3xl font-serif font-bold text-white mb-6">{{ dish.name }}</h3>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end">
+              <span class="text-yellow-400 font-bold text-[10px] uppercase tracking-widest mb-1">{{ dish.category }}</span>
+              <h3 class="text-2xl font-bold text-white mb-4">{{ dish.name }}</h3>
 
-              <div
-                class="flex justify-between items-center translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                <span class="text-2xl font-black text-white">${{ dish.price }}</span>
-                <span
-                  class="px-5 py-2 bg-white/10 backdrop-blur-md text-white text-[10px] uppercase font-bold rounded-full border border-white/20 tracking-widest">
-                  Ver Detalles
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-white">${{ dish.price }}</span>
+                <span class="px-4 py-1.5 bg-green-600 text-white text-[10px] uppercase font-bold rounded-lg tracking-wider shadow-lg">
+                  Pedir ya
                 </span>
               </div>
             </div>
@@ -108,18 +105,14 @@ const scrollBtn = (direction) => {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
-/* Soporte para inercia en móviles */
 @media (max-width: 768px) {
   .no-scrollbar {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
   }
-
   .carousel-item {
     scroll-snap-align: center;
   }
