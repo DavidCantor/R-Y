@@ -2,7 +2,7 @@
   <section>
     <PublicContactoContactHero />
     <PublicContactoContactForm />
-    <PublicContactoEventContact />
-    <PublicContactoQuickConnect />
+    <LazyPublicContactoEventContact />
+    <LazyPublicContactoQuickConnect />
   </section>
 </template>

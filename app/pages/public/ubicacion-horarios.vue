@@ -2,7 +2,7 @@
   <section>
     <PublicUbicacionHorariosUbicacionHero />
     <PublicUbicacionHorariosUbicacionReferencia />
-    <PublicUbicacionHorariosUbicacionFAQ />
-    <PublicUbicacionHorariosUbicacionCta />
+    <LazyPublicUbicacionHorariosUbicacionCta />
+    <LazyPublicUbicacionHorariosUbicacionFAQ />
   </section>
 </template>

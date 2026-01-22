@@ -1,7 +1,7 @@
 <template>
   <section>
     <PublicMenuSectionHeader />
-    <LazyPublicMenuCarrusel />
+    <PublicMenuCarrusel />
     <LazyPublicMenuPlatosMenu />
   </section>
 </template>

@@ -1,8 +1,8 @@
 <template>
   <section>
     <PublicInicioHeroInicio />
-    <PublicInicioNosotrosInicio />
     <PublicInicioInfoInicio />
-    <PublicInicioGaleriaInicio />
+    <PublicInicioNosotrosInicio />
+    <LazyPublicInicioGaleriaInicio />
   </section>
 </template>
