@@ -30,8 +30,8 @@
           <h4 class="font-amatic text-[#F2C46D] text-3xl font-bold mb-6 tracking-wide">Explorar</h4>
           <ul class="space-y-3 font-sans text-sm font-medium">
             <li><NuxtLink to="/" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Inicio</NuxtLink></li>
-            <li><NuxtLink to="/menu" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Menú Digital</NuxtLink></li>
-            <li><NuxtLink to="/ubicacion" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Cómo llegar</NuxtLink></li>
+            <li><NuxtLink to="/public/menu" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Menú Digital</NuxtLink></li>
+            <li><NuxtLink to="/public/ubicacion" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Cómo llegar</NuxtLink></li>
           </ul>
         </div>
 

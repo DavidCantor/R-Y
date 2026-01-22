@@ -44,7 +44,7 @@ onMounted(() => {
 
       <div class="space-y-4">
         <div v-for="(faq, i) in faqs" :key="i" 
-          :class="['overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 transition-all duration-700', 
+          :class="['overflow-hidden rounded-4xl border border-white/10 bg-white/5 transition-all duration-700', 
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10']"
           :style="{ transitionDelay: `${i * 100}ms` }"
         >

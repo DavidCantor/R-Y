@@ -30,7 +30,7 @@ const closeMenu = () => {
 
 <template>
   <nav :class="[
-    'fixed w-full top-0 z-[100] transition-all duration-500',
+    'fixed w-full top-0 z-100 transition-all duration-500',
     isScrolled 
       ? 'bg-[#1D5948] shadow-2xl py-1' 
       : 'bg-transparent py-6'
@@ -79,7 +79,7 @@ const closeMenu = () => {
 
         <div class="md:hidden flex items-center">
           <button @click="isMenuOpen = !isMenuOpen" 
-            class="text-[#F2C46D] transition-colors duration-500 relative z-[110]"
+            class="text-[#F2C46D] transition-colors duration-500 relative z-110"
             aria-label="Menu">
             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
@@ -92,7 +92,7 @@ const closeMenu = () => {
 
     <Transition name="slide">
       <div v-if="isMenuOpen" 
-           class="fixed inset-0 z-[105] bg-[#1D5948] flex flex-col justify-center items-center">
+           class="fixed inset-0 z-105 bg-[#1D5948] flex flex-col justify-center items-center">
         
         <NuxtImg src="/images/logo experienzzia.webp" class="w-48 h-48 mb-6 drop-shadow-2xl" alt="Logo" />
         

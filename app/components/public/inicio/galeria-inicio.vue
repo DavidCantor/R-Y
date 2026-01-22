@@ -38,7 +38,7 @@ const galleryItems = [
         <div class="h-1 w-20 bg-[#F2C46D] mx-auto mb-6"></div>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-auto md:h-[850px]">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-auto md:h-212.5">
         
         <div v-for="(item, index) in galleryItems" :key="index"
           :class="[
@@ -51,7 +51,7 @@ const galleryItems = [
           <img :src="item.img" :alt="item.title" 
             class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" />
           
-          <div class="absolute inset-0 bg-gradient-to-t from-[#1D5948]/90 via-[#1D5948]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out flex items-end p-6">
+          <div class="absolute inset-0 bg-linear-to-t from-[#1D5948]/90 via-[#1D5948]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out flex items-end p-6">
             <span class="text-[#F2C46D] font-amatic text-3xl md:text-4xl leading-none transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
               {{ item.title }}
             </span>
@@ -64,7 +64,7 @@ const galleryItems = [
 
       </div>
 
-      <div :class="['mt-16 text-center transition-all duration-1000 delay-[900ms]', isVisible ? 'opacity-100' : 'opacity-0']">
+      <div :class="['mt-16 text-center transition-all duration-1000 delay-900', isVisible ? 'opacity-100' : 'opacity-0']">
         <NuxtLink to="/menu" 
           class="inline-block px-12 py-5 bg-[#1D5948] text-[#F2C46D] rounded-full font-sans font-extrabold text-xs uppercase tracking-widest hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all shadow-xl hover:-translate-y-1">
           Ver Menú Completo

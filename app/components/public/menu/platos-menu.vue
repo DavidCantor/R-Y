@@ -56,7 +56,7 @@ const filteredDishes = computed(() => {
         </div>
       </div>
 
-      <div class="relative min-h-[600px]">
+      <div class="relative min-h-150">
         <transition-group 
           name="list" 
           tag="div" 
@@ -67,8 +67,8 @@ const filteredDishes = computed(() => {
             
             <div class="relative h-64 overflow-hidden">
               <img :src="dish.image" :alt="dish.name"
-                class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#1D5948]/60 to-transparent"></div>
+                class="w-full h-full object-cover grayscale-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
+              <div class="absolute inset-0 bg-linear-to-t from-[#1D5948]/60 to-transparent"></div>
               
               <div class="absolute bottom-4 right-6 bg-[#F2C46D] text-[#1D5948] w-20 h-20 rounded-full flex items-center justify-center flex-col shadow-xl border-4 border-[#1D5948]">
                 <span class="text-[10px] font-bold leading-none">SOLO</span>

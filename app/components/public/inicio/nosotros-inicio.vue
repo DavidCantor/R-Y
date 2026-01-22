@@ -47,7 +47,7 @@ const benefits = [
 
         <div 
           :class="[
-            'w-full lg:w-1/2 relative transition-all duration-[1200ms] ease-out',
+            'w-full lg:w-1/2 relative transition-all duration-1200 ease-out',
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
           ]"
         >
@@ -55,7 +55,7 @@ const benefits = [
           
           <div class="relative z-10 rounded-3xl overflow-hidden border-4 border-[#F2F2F2]/10 shadow-2xl rotate-1 group">
             <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=1000"
-              alt="Ambiente tradicional" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              alt="Ambiente tradicional" class="w-full h-112.5 object-cover group-hover:scale-105 transition-transform duration-700" />
             
             <div class="absolute bottom-6 left-6 bg-[#F2C46D] px-6 py-3 rounded-full shadow-xl">
               <p class="text-xs font-bold text-[#1D5948] uppercase tracking-widest font-sans">Sabor de Hogar</p>
@@ -118,7 +118,7 @@ const benefits = [
 
           <div 
             :class="[
-              'mt-12 flex justify-center lg:justify-start transition-all duration-700 delay-[1500ms]',
+              'mt-12 flex justify-center lg:justify-start transition-all duration-700 delay-1500',
               isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
             ]"
           >

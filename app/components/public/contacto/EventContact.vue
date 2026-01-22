@@ -29,7 +29,7 @@ onMounted(() => {
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10']">
           
           <div class="grid grid-cols-2 gap-3 md:gap-4">
-            <div class="relative group overflow-hidden rounded-[2rem] aspect-square shadow-xl border-2 border-white/50">
+            <div class="relative group overflow-hidden rounded-4xl aspect-square shadow-xl border-2 border-white/50">
               <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600" 
                    class="w-full h-full object-cover" alt="Evento" />
             </div>
@@ -39,7 +39,7 @@ onMounted(() => {
                 <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=400" 
                      class="w-full h-full object-cover" alt="Detalle" />
               </div>
-              <div class="relative group overflow-hidden rounded-[1.5rem] flex-1 shadow-lg border-2 border-white/50 min-h-[100px]">
+              <div class="relative group overflow-hidden rounded-[1.5rem] flex-1 shadow-lg border-2 border-white/50 min-h-25">
                 <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=400" 
                      class="w-full h-full object-cover" alt="Cena" />
               </div>

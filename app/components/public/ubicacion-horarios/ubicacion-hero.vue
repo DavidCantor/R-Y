@@ -69,7 +69,7 @@ onMounted(() => {
         </div>
 
         <div class="flex-1 w-full order-1 lg:order-2">
-          <div :class="['relative transition-all duration-[1.5s] ease-out mx-auto max-w-[450px] lg:max-w-none', 
+          <div :class="['relative transition-all duration-[1.5s] ease-out mx-auto max-w-112.5 lg:max-w-none', 
                 isVisible ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-90 translate-x-10']">
             
             <div class="absolute inset-0 bg-[#F2C46D] -translate-x-4 -translate-y-4 rounded-br-[4rem] rounded-tl-[4rem] z-0 opacity-40"></div>
@@ -77,14 +77,14 @@ onMounted(() => {
             <div class="relative z-10 overflow-hidden rounded-br-[4rem] rounded-tl-[4rem] aspect-square shadow-2xl border-2 border-white/20">
               <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800" 
                    alt="Local Experienzzia Gourmet" 
-                   class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700">
+                   class="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-700">
               
               <div class="absolute top-6 right-6 bg-green-500 text-white px-4 py-2 rounded-full font-sans font-black text-[9px] tracking-widest shadow-lg animate-pulse">
                 ABIERTO AHORA
               </div>
             </div>
 
-            <div :class="['absolute -bottom-4 -right-2 md:-right-6 bg-white p-5 rounded-2xl shadow-2xl z-20 max-w-[180px] hidden sm:block transition-all duration-1000 delay-700', 
+            <div :class="['absolute -bottom-4 -right-2 md:-right-6 bg-white p-5 rounded-2xl shadow-2xl z-20 max-w-45 hidden sm:block transition-all duration-1000 delay-700', 
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10']">
               <p class="font-sans font-black text-[#1D5948] text-[10px] mb-1 uppercase">Estamos cerca</p>
               <p class="font-sans text-gray-500 text-[10px] leading-tight italic">"A pasos de la Plaza Central de Suba."</p>

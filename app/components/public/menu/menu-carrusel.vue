@@ -110,13 +110,13 @@ onUnmounted(() => clearInterval(autoplayTimer))
           class="flex overflow-x-auto gap-5 md:gap-8 pb-10 no-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing px-2"
         >
           <div v-for="(dish, index) in dishes" :key="dish.id" 
-            class="card-item flex-none w-[85%] sm:w-[60%] md:w-[380px] snap-center"
+            class="card-item flex-none w-[85%] sm:w-[60%] md:w-95 snap-center"
           >
             <div :class="['group bg-white rounded-[2.5rem] md:rounded-[3rem] p-3 md:p-4 shadow-xl border border-white/50 transition-all duration-700', 
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20']"
               :style="{ transitionDelay: `${index * 100}ms` }"
             >
-              <div class="relative aspect-square overflow-hidden rounded-[2rem] md:rounded-[2.5rem] mb-4 md:mb-6 border border-gray-100">
+              <div class="relative aspect-square overflow-hidden rounded-4xl md:rounded-[2.5rem] mb-4 md:mb-6 border border-gray-100">
                 <img :src="dish.image" :alt="dish.name" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[4s] ease-out" />
                 
                 <div class="absolute top-4 right-4 bg-[#1D5948] text-[#F2C46D] font-sans font-black text-[10px] md:text-xs px-4 py-1.5 rounded-full shadow-md">

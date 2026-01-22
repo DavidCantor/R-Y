@@ -15,7 +15,7 @@ onMounted(() => {
     
 
 
-    <div class="absolute top-1/2 left-0 w-[600px] h-[600px] bg-[#F2C46D]/10 rounded-full blur-[120px] -translate-y-1/2 -ml-64 pointer-events-none z-0"></div>
+    <div class="absolute top-1/2 left-0 w-150 h-150 bg-[#F2C46D]/10 rounded-full blur-[120px] -translate-y-1/2 -ml-64 pointer-events-none z-0"></div>
 
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative z-10">
       
@@ -24,7 +24,7 @@ onMounted(() => {
           <span class="font-sans text-[#F2C46D] font-bold tracking-[0.3em] uppercase text-xs mb-4 block">
             Tradición y sabor en Suba, Bogotá
           </span>
-          <div class="h-[2px] w-16 bg-[#F2C46D] mb-8 mx-auto lg:mx-0"></div>
+          <div class="h-0.5 w-16 bg-[#F2C46D] mb-8 mx-auto lg:mx-0"></div>
         </div>
 
         <h1 :class="['font-amatic text-6xl md:text-8xl text-[#F2F2F2] leading-[0.9] mb-6 transition-all duration-1000 delay-200 transform', 
@@ -38,7 +38,7 @@ onMounted(() => {
           En <span class="font-bold border-b-2 border-[#F2C46D]">Experienzzia Gourmet</span>, convertimos tus onces, meriendas y brunch en momentos llenos de calidez y tradición.
         </p>
 
-        <div :class="['flex flex-col sm:flex-row gap-5 justify-center lg:justify-start transition-all duration-1000 delay-[400ms] transform',
+        <div :class="['flex flex-col sm:flex-row gap-5 justify-center lg:justify-start transition-all duration-1000 delay-400 transform',
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10']">
           
           <NuxtLink to="/menu" 
@@ -53,11 +53,11 @@ onMounted(() => {
         </div>
       </div>
 
-      <div :class="['lg:w-1/2 w-full relative transition-all duration-[1500ms] delay-[600ms] transform', 
+      <div :class="['lg:w-1/2 w-full relative transition-all duration-1500 delay-600 transform', 
         isLoaded ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-20 scale-95']">
         
         <div class="relative z-10 bg-[#F2F2F2] rounded-3xl p-4 shadow-[0_40px_80px_rgba(0,0,0,0.5)] rotate-3">
-          <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-[#24735C] flex items-center justify-center relative">
+          <div class="aspect-4/5 overflow-hidden rounded-2xl bg-[#24735C] flex items-center justify-center relative">
              <div class="absolute inset-0 opacity-10 pointer-events-none">
                 <svg width="100%" height="100%"><filter id="innerGrain"><feTurbulence baseFrequency="0.9" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#innerGrain)"/></svg>
             </div>

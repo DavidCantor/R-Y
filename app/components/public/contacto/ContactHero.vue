@@ -64,10 +64,10 @@ onMounted(() => {
             
             <div class="absolute inset-0 bg-[#F2C46D] translate-x-4 translate-y-4 rounded-[4rem] rounded-tr-none z-0 opacity-80"></div>
             
-            <div class="relative z-10 aspect-square md:aspect-[4/5] lg:aspect-square overflow-hidden rounded-[4rem] rounded-tr-none border-2 border-white/20 shadow-2xl">
+            <div class="relative z-10 aspect-square md:aspect-4/5 lg:aspect-square overflow-hidden rounded-[4rem] rounded-tr-none border-2 border-white/20 shadow-2xl">
               <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800"
                 alt="Ambiente Gourmet"
-                class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" />
+                class="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-700" />
               
               <div class="absolute bottom-6 left-6 right-6 bg-white p-5 rounded-3xl shadow-2xl flex items-center gap-4">
                 <div class="relative flex h-3 w-3">

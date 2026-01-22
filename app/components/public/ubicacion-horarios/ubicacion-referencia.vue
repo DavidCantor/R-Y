@@ -59,7 +59,7 @@ const guides = [
           <div class="relative group">
             <div class="absolute inset-0 bg-[#1D5948] translate-x-4 translate-y-4 rounded-[3rem]"></div>
             
-            <div class="relative h-[400px] md:h-[500px] w-full rounded-[3rem] overflow-hidden border-4 border-white shadow-2xl">
+            <div class="relative h-100 md:h-125 w-full rounded-[3rem] overflow-hidden border-4 border-white shadow-2xl">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2!2d-74.0!3d4.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDInMDAuMCJOIDc0wrAwMCcwMC4wIlc!5e0!3m2!1ses!2sco!4v123456789" 
                 class="w-full h-full border-0 grayscale-[0.2] contrast-[1.1]" 
@@ -92,7 +92,7 @@ const guides = [
             </div>
           </div>
 
-          <div :class="['pt-6 transition-all duration-1000 delay-[1s]', isVisible ? 'opacity-100' : 'opacity-0']">
+          <div :class="['pt-6 transition-all duration-1000 delay-1000', isVisible ? 'opacity-100' : 'opacity-0']">
             <a href="https://maps.app.goo.gl/..." target="_blank" class="flex items-center justify-center gap-3 w-full py-5 bg-[#1D5948] text-[#F2C46D] rounded-full font-sans font-black uppercase text-xs tracking-[0.2em] hover:bg-[#24735C] transition-all shadow-2xl hover:shadow-[#1D5948]/40">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /></svg>
               ¿Cómo llegar ahora?
@@ -115,6 +115,6 @@ iframe {
   transition: filter 0.5s ease;
 }
 .group:hover iframe {
-  grayscale: 0;
+  filter: grayscale(0);
 }
 </style>

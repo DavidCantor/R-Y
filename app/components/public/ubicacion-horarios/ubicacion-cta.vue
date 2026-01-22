@@ -31,7 +31,7 @@ onMounted(() => {
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10']">
           
           <div class="inline-flex items-center gap-3 mb-6">
-            <span class="w-8 h-[2px] bg-[#F2C46D]"></span>
+            <span class="w-8 h-0.5 bg-[#F2C46D]"></span>
             <span class="font-sans text-[#F2C46D] text-[10px] md:text-xs font-black uppercase tracking-[0.4em]">Experiencias Colectivas</span>
           </div>
           

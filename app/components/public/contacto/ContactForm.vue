@@ -61,7 +61,7 @@ onMounted(() => {
           <div class="relative group">
             <div class="absolute inset-0 bg-black/40 translate-x-6 translate-y-6 rounded-[3rem] blur-xl"></div>
             
-            <form @submit.prevent class="relative bg-[#FDFCF9] p-8 md:p-14 rounded-[3rem] border-b-[12px] border-[#E5E2D9]">
+            <form @submit.prevent class="relative bg-[#FDFCF9] p-8 md:p-14 rounded-[3rem] border-b-12 border-[#E5E2D9]">
               
               <div class="grid grid-cols-1 gap-8">
                 <div v-for="(label, placeholder, idx) in { 'nombre': 'Tu nombre completo', 'correo': 'tu@email.com' }" :key="idx" class="relative">

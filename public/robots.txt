@@ -1,2 +1,13 @@
-User-Agent: *
-Disallow:
+# Instrucciones para todos los buscadores (Google, Bing, etc.)
+User-agent: *
+
+# Permitir que rastreen todo el contenido público
+Allow: /
+
+# Bloquear carpetas internas o de sistema (opcional pero recomendado)
+Disallow: /_nuxt/
+Disallow: /admin/
+Disallow: /api/
+
+# Indicar la ubicación del mapa del sitio para mejorar la indexación
+Sitemap: https://experienzzia.vercel.app/sitemap.xml
