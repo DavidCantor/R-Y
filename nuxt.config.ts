@@ -9,12 +9,12 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'es' },
-      title: 'Experienzzia Gourmet | Sabores Artesanales en Suba Centro',
+      title: 'Experienzzia Gourmet | Onces, Desayunos y Brunch en Suba',
       titleTemplate: '%s - Experienzzia Gourmet',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'La mejor experiencia gastronómica en Suba Centro. Platos artesanales, eventos exclusivos y ambiente rústico.' },
+        { name: 'description', content: 'Experienzzia Gourmet ofrece onces, desayunos y brunch en Suba, Bogotá. Atención en local y a domicilio. Organización de eventos. Escríbenos por WhatsApp.' },
         { property: 'og:title', content: 'Experienzzia Gourmet | Sabores Artesanales en Suba' },
         { property: 'og:image', content: '/og-image.jpg' },
       ],
