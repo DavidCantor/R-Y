@@ -13,6 +13,10 @@ export default defineNuxtConfig({
       titleTemplate: '%s - Experienzzia Gourmet',
       meta: [
         { charset: 'utf-8' },
+        {
+          name: 'google-site-verification',
+          content: 'AbCdEf123456'
+        },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Experienzzia Gourmet ofrece onces, desayunos y brunch en Suba, Bogotá. Atención en local y a domicilio. Organización de eventos. Escríbenos por WhatsApp.' },
         { property: 'og:title', content: 'Experienzzia Gourmet | Sabores Artesanales en Suba' },
