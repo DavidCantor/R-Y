@@ -1,60 +1,71 @@
-# 🌿 Experienzzia Gourmet - Restaurante Artesanal
+# 🌿 Experienzzia Gourmet | Restaurante
 
-¡Bienvenido al repositorio de **Experienzzia Gourmet**! Una plataforma web moderna, rápida y visualmente cautivadora desarrollada para un restaurante artesanal en Suba Centro, Bogotá.
+![Nuxt](https://img.shields.io/badge/Nuxt-4.2.2-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-Deploy-black?style=for-the-badge&logo=vercel)
 
-Este proyecto utiliza **Nuxt 3** para ofrecer una experiencia de usuario fluida, con un diseño rústico-gourmet que resalta la calidad y la calidez del establecimiento.
-
----
-
-## ✨ Características Principales
-
-* **⚡ Rendimiento de Alto Nivel:** Desarrollado con Nuxt 3 y desplegado en Vercel para una carga instantánea.
-* **🎨 Diseño Rústico-Gourmet:** Estética innovadora con texturas orgánicas, tipografías artesanales y Glassmorphism.
-* **📱 Totalmente Responsivo:** Optimizado para dispositivos móviles, tablets y desktop.
-* **🔍 SEO Avanzado:** Metadatos dinámicos, Schema.org (JSON-LD) y Sitemap automático.
-* **🖼️ Galería Visual:** Layouts asimétricos para mostrar los platos con un enfoque editorial.
+**Experienzzia Gourmet** es una plataforma web de alto rendimiento diseñada para un restaurante artesanal ubicado en Suba Centro, Bogotá. Este proyecto fusiona una estética rústica editorial con tecnologías de vanguardia para ofrecer una experiencia de usuario (UX) excepcional y un posicionamiento SEO competitivo.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🚀 Stack Tecnológico
 
-* **Framework:** Nuxt 3
-* **Estilos:** Tailwind CSS & Nuxt UI
-* **Imágenes:** @nuxt/image (Optimización automática)
-* **Fuentes:** Amatic SC e Inter
-* **Despliegue:** Vercel
-
----
-
-## 🚀 Instalación y Desarrollo
-
-Sigue estos pasos para ejecutar el proyecto localmente:
-
-1. **Clonar el repositorio:**
-   git clone https://github.com/tu-usuario/experienzzia-gourmet.git
-
-2. **Instalar dependencias:**
-   npm install
-
-3. **Iniciar servidor de desarrollo:**
-   npm run dev
-   (Disponible en http://localhost:3000)
-
-4. **Construcción para producción:**
-   npm run build
+| Módulo | Herramienta | Beneficio |
+| :--- | :--- | :--- |
+| **Core Framework** | Nuxt 4 | Renderizado híbrido (SSR/Static) para velocidad extrema. |
+| **UI Framework** | Nuxt UI + Tailwind | Sistema de diseño consistente y totalmente responsivo. |
+| **Asset Management** | @nuxt/image | Compresión automática y formatos de nueva generación (WebP). |
+| **SEO & Meta** | Nuxt SEO | Estructura de metadatos dinámica y Schema.org Local Business. |
+| **Deployment** | Vercel Edge | Entrega de contenido de baja latencia a nivel global. |
 
 ---
 
-## 📈 Configuración SEO
+## 🛠️ Guía de Instalación
 
-El proyecto incluye una configuración robusta en `nuxt.config.ts`:
-* **Sitemap:** Generado automáticamente en `/sitemap.xml`.
-* **Robots:** Configurado para una indexación eficiente.
-* **Validación:** Verificación de Google Search Console integrada.
+Sigue estos pasos para configurar el entorno de desarrollo localmente:
 
-## 📸 Demo en Vivo
+### 1. Requisitos Previos
+* Node.js (v18.x o superior)
+* Gestor de paquetes: NPM, PNPM o Yarn
 
-🔗 **Puedes ver el despliegue aquí:** https://experienzzia.vercel.app
+### 2. Clonar y Configurar
+Clona el repositorio en tu máquina local:
+`git clone https://github.com/tu-usuario/experienzzia-gourmet.git`
+
+Entra al directorio:
+`cd experienzzia-gourmet`
+
+### 3. Instalación e Inicio
+Instala las dependencias y lanza el servidor:
+`npm install`
+`npm run dev`
+
+> El sitio estará disponible en: **http://localhost:3000**
 
 ---
-*Desarrollado con ❤️ para Experienzzia Gourmet*
+
+## 🔍 Optimización SEO & Rendimiento
+
+El sitio está diseñado para dominar los resultados de búsqueda locales:
+
+1.  **Local Business Schema:** Inyección de JSON-LD para que Google identifique dirección, horarios y menú.
+2.  **Core Web Vitals:** Optimizado para obtener puntuaciones superiores a 90 en LCP, FID y CLS.
+3.  **Social Graph:** Configuración completa de tarjetas Open Graph para previsualizaciones impactantes en redes sociales.
+
+---
+
+## 📁 Arquitectura del Proyecto
+
+* **/components:** Componentes atómicos de UI (Botones, Galería, Menú).
+* **/assets:** Estilos globales, imágenes fuente y tipografías.
+* **/composables:** Lógica de negocio reutilizable.
+* **/public:** Activos estáticos, robots.txt y favicons.
+
+---
+
+## 📸 Demo y Contacto
+
+🔗 **Explora el sitio en vivo:** [https://experienzzia.vercel.app](https://experienzzia.vercel.app)
+
+---
+**Desarrollado con ❤️ para Experienzzia Gourmet** *Transformando la tradición artesanal en una experiencia digital de lujo.*
