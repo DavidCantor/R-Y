@@ -16,7 +16,7 @@
         <div class="space-y-6">
           <div class="flex flex-col items-start">
             <img 
-              src="/images/logo experienzzia.webp" 
+              src="/images/logo-experienzzia.webp" 
               alt="Logo Experienzzia Gourmet" 
               class="w-32 h-auto mb-4 drop-shadow-md"
             />
@@ -31,7 +31,7 @@
           <ul class="space-y-3 font-sans text-sm font-medium">
             <li><NuxtLink to="/" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Inicio</NuxtLink></li>
             <li><NuxtLink to="/public/menu" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Menú Digital</NuxtLink></li>
-            <li><NuxtLink to="/public/ubicacion" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Cómo llegar</NuxtLink></li>
+            <li><NuxtLink to="/public/ubicacion-horarios" class="hover:text-[#F2C46D] transition-colors flex items-center gap-2"><span>›</span> Cómo llegar</NuxtLink></li>
           </ul>
         </div>
 

@@ -11,15 +11,20 @@ export default defineNuxtConfig({
       titleTemplate: '%s - Experienzzia Gourmet',
       meta: [
         { charset: 'utf-8' },
-        // <meta name="google-site-verification" content="zuceSRodwbpYnw20AniZKfXDdmCwEe7or0kI1yK7PZw" />
-        {
-          name: 'google-site-verification',
-          content: 'zuceSRodwbpYnw20AniZKfXDdmCwEe7or0kI1yK7PZw'
-        },
+        { name: 'google-site-verification', content: 'zuceSRodwbpYnw20AniZKfXDdmCwEe7or0kI1yK7PZw' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Experienzzia Gourmet ofrece onces, desayunos y brunch en Suba, Bogotá. Atención en local y a domicilio. Organización de eventos. Escríbenos por WhatsApp.' },
+        
+        // --- ESTOS CAMBIOS QUITARÁN EL NOMBRE "VERCEL" ---
+        { name: 'apple-mobile-web-app-title', content: 'Experienzzia Gourmet' },
+        { property: 'og:site_name', content: 'Experienzzia Gourmet' },
+        { property: 'og:type', content: 'website' },
+        // -----------------------------------------------
+
         { property: 'og:title', content: 'Experienzzia Gourmet | Sabores Artesanales en Suba' },
-        { property: 'og:image', content: '/public/images/logo experienzzia.webp' },
+        // CORRECCIÓN: En Nuxt, la carpeta /public no se escribe en la ruta. 
+        // Si tu imagen está en public/images/logo.webp, la ruta debe ser:
+        { property: 'og:image', content: '/images/logo experienzzia.webp' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

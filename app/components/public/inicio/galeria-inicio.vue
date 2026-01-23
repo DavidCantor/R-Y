@@ -65,7 +65,7 @@ const galleryItems = [
       </div>
 
       <div :class="['mt-16 text-center transition-all duration-1000 delay-900', isVisible ? 'opacity-100' : 'opacity-0']">
-        <NuxtLink to="/menu" 
+        <NuxtLink to="/public/menu" 
           class="inline-block px-12 py-5 bg-[#1D5948] text-[#F2C46D] rounded-full font-sans font-extrabold text-xs uppercase tracking-widest hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all shadow-xl hover:-translate-y-1">
           Ver Menú Completo
         </NuxtLink>

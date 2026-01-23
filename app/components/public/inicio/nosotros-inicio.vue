@@ -122,7 +122,7 @@ const benefits = [
               isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
             ]"
           >
-            <NuxtLink to="/contacto" class="px-10 py-4 bg-[#24735C] text-[#F2F2F2] font-sans font-bold uppercase tracking-widest text-xs rounded-full border border-[#F2C46D]/30 hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all shadow-xl">
+            <NuxtLink to="/public/contacto" class="px-10 py-4 bg-[#24735C] text-[#F2F2F2] font-sans font-bold uppercase tracking-widest text-xs rounded-full border border-[#F2C46D]/30 hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all shadow-xl">
               Conoce más de nosotros
             </NuxtLink>
           </div>
