@@ -39,7 +39,7 @@ onMounted(() => {
         <div :class="['flex flex-col sm:flex-row gap-5 justify-center lg:justify-start transition-all duration-1000 delay-400 transform',
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10']">
           
-          <NuxtLink to="/menu" 
+          <NuxtLink to="/public/menu" 
             class="px-10 py-4 bg-[#F2C46D] text-[#1D5948] font-sans font-extrabold uppercase tracking-widest text-xs rounded-full hover:bg-[#F2F2F2] transition-all shadow-xl text-center">
             Ver el Menú
           </NuxtLink>

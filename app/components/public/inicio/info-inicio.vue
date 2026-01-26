@@ -32,8 +32,8 @@ const infoCards = [
   {
     title: 'Horario',
     desc: '<strong>Lun a Sáb:</strong> 7:00 - 19:00 <br /> <strong>Dom:</strong> 8:00 - 14:00',
-    linkText: null,
-    link: null,
+    linkText: "Consultar",
+    link: 'https://wa.me/573004855722',
     iconPath: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
     color: '#1D5948'
   },
@@ -92,8 +92,8 @@ const infoCards = [
                  'inline-block font-sans font-black text-[10px] uppercase tracking-[0.2em] transition-all w-full py-3 rounded-xl',
                  card.isCTA 
                    ? 'bg-[#24735C] text-white hover:bg-[#1D5948] shadow-lg hover:shadow-[#24735C]/20 active:scale-95 animate-subtle-pulse' 
-                   : 'text-[#24735C] hover:bg-[#24735C]/5 border border-transparent hover:border-[#24735C]/10'
-               ]">
+                   : 'bg-[#24735C] text-white hover:bg-[#1D5948] shadow-lg hover:shadow-[#24735C]/20 active:scale-95 animate-subtle-pulse'
+               ]" >
               {{ card.linkText }}
             </NuxtLink>
           </footer>

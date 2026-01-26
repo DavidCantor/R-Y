@@ -14,14 +14,14 @@ onMounted(() => {
 })
 
 const galleryItems = [
-  { title: 'Desayunos Completos', size: 'col-span-2 row-span-2', img: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=1000', delay: '100' },
-  { title: 'Meriendas', size: 'col-span-1 row-span-1', img: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600', delay: '200' },
-  { title: 'Brunch Especial', size: 'col-span-1 row-span-1', img: 'https://images.unsplash.com/photo-1593308123721-26756816579c?q=80&w=600', delay: '300' },
-  { title: 'Panadería', size: 'col-span-1 row-span-1', img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600', delay: '400' },
-  { title: 'Bebidas Calientes', size: 'col-span-1 row-span-2', img: 'https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=600', delay: '500' },
-  { title: 'Postres de la Casa', size: 'col-span-1 row-span-1', img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800', delay: '600' },
-  { title: 'Jugos Naturales', size: 'col-span-1 row-span-1', img: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=600', delay: '700' },
-  { title: 'Jugos Naturales', size: 'col-span-1 row-span-1', img: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=600', delay: '700' }
+  { title: 'Desayunos Completos', size: 'col-span-2 row-span-2', img: '/images/galeria/1.webp', delay: '100' },
+  { title: 'Meriendas', size: 'col-span-1 row-span-1', img: '/images/galeria/2.webp', delay: '200' },
+  { title: 'Brunch Especial', size: 'col-span-1 row-span-1', img: '/images/galeria/3.webp', delay: '300' },
+  { title: 'Panadería', size: 'col-span-1 row-span-1', img: '/images/galeria/4.webp', delay: '400' },
+  { title: 'Bebidas Calientes', size: 'col-span-1 row-span-2', img: '/images/galeria/5.webp', delay: '500' },
+  { title: 'Postres de la Casa', size: 'col-span-1 row-span-1', img: '/images/galeria/6.webp', delay: '600' },
+  { title: 'Jugos Naturales', size: 'col-span-1 row-span-1', img: '/images/galeria/7.webp', delay: '700' },
+  { title: 'Jugos Naturales', size: 'col-span-1 row-span-1', img: '/images/galeria/8.webp', delay: '700' }
 ]
 </script>
 
@@ -48,7 +48,7 @@ const galleryItems = [
           ]"
           :style="{ transitionDelay: `${item.delay}ms` }"
         >
-          <img :src="item.img" :alt="item.title" 
+          <NuxtImg :src="item.img" :alt="item.title" 
             class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" />
           
           <div class="absolute inset-0 bg-linear-to-t from-[#1D5948]/90 via-[#1D5948]/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out flex items-end p-6">

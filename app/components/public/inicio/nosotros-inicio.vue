@@ -54,7 +54,7 @@ const benefits = [
           <div class="absolute -top-4 -left-4 w-24 h-24 bg-[#F2C46D] rounded-2xl z-0 opacity-20"></div>
           
           <div class="relative z-10 rounded-3xl overflow-hidden border-4 border-[#F2F2F2]/10 shadow-2xl rotate-1 group">
-            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=1000"
+            <NuxtImg src="/images/postres/galletacorazon.webp"
               alt="Ambiente tradicional" class="w-full h-112.5 object-cover group-hover:scale-105 transition-transform duration-700" />
             
             <div class="absolute bottom-6 left-6 bg-[#F2C46D] px-6 py-3 rounded-full shadow-xl">
@@ -114,17 +114,6 @@ const benefits = [
               </div>
               <span class="text-[#F2F2F2] font-medium font-sans italic">{{ item }}</span>
             </div>
-          </div>
-
-          <div 
-            :class="[
-              'mt-12 flex justify-center lg:justify-start transition-all duration-700 delay-1500',
-              isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
-            ]"
-          >
-            <NuxtLink to="/public/contacto" class="px-10 py-4 bg-[#24735C] text-[#F2F2F2] font-sans font-bold uppercase tracking-widest text-xs rounded-full border border-[#F2C46D]/30 hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all shadow-xl">
-              Conoce más de nosotros
-            </NuxtLink>
           </div>
         </div>
 
