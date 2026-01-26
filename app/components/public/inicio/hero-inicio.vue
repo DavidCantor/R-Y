@@ -13,8 +13,6 @@ onMounted(() => {
 <template>
   <section class="relative w-full pt-32 pb-16 px-6 md:pt-48 md:pb-24 bg-[#1D5948] overflow-hidden border-b-4 border-[#F2C46D]">
     
-
-
     <div class="absolute top-1/2 left-0 w-150 h-150 bg-[#F2C46D]/10 rounded-full blur-[120px] -translate-y-1/2 -ml-64 pointer-events-none z-0"></div>
 
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative z-10">
@@ -41,32 +39,40 @@ onMounted(() => {
         <div :class="['flex flex-col sm:flex-row gap-5 justify-center lg:justify-start transition-all duration-1000 delay-400 transform',
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10']">
           
-          <NuxtLink to="/public/menu" 
-            class="px-10 py-4 bg-[#F2C46D] text-[#1D5948] font-sans font-extrabold uppercase tracking-widest text-xs rounded-full hover:bg-[#F2F2F2] transition-all shadow-xl">
+          <NuxtLink to="/menu" 
+            class="px-10 py-4 bg-[#F2C46D] text-[#1D5948] font-sans font-extrabold uppercase tracking-widest text-xs rounded-full hover:bg-[#F2F2F2] transition-all shadow-xl text-center">
             Ver el Menú
           </NuxtLink>
           
           <a href="https://wa.me/573004855722" target="_blank"
-            class="px-10 py-4 border-2 border-[#F2C46D] text-[#F2C46D] font-sans font-extrabold uppercase tracking-widest text-xs rounded-full hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all flex items-center justify-center gap-2">
+            class="px-10 py-4 border-2 border-[#F2C46D] text-[#F2C46D] font-sans font-extrabold uppercase tracking-widest text-xs rounded-full hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all flex items-center justify-center gap-2 text-center">
             Pide tu Domicilio
           </a>
         </div>
       </div>
 
-      <div :class="['lg:w-1/2 w-full relative transition-all duration-1500 delay-600 transform', 
+      <div :class="['lg:w-1/2 w-full relative transition-all duration-[1500ms] delay-600 transform', 
         isLoaded ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-20 scale-95']">
         
-        <div class="relative z-10 bg-[#F2F2F2] rounded-3xl p-4 shadow-[0_40px_80px_rgba(0,0,0,0.5)] rotate-3">
-          <div class="aspect-4/5 overflow-hidden rounded-2xl bg-[#24735C] flex items-center justify-center relative">
-             <div class="absolute inset-0 opacity-10 pointer-events-none">
-                <svg width="100%" height="100%"><filter id="innerGrain"><feTurbulence baseFrequency="0.9" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#innerGrain)"/></svg>
+        <div class="relative z-10 bg-white p-3 md:p-5 rounded-2xl shadow-[0_40px_80px_rgba(0,0,0,0.4)] rotate-3">
+          <div class="aspect-[4/5] overflow-hidden rounded-lg bg-gray-200 relative group">
+            
+            <NuxtImg 
+              src="/images/postres/mesapostres.webp" 
+              alt="Delicias Experienzzia"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+               <p class="font-amatic text-[#F2C46D] text-3xl md:text-4xl drop-shadow-lg">¡Delicias recién preparadas!</p>
             </div>
-            <div class="text-center p-8 z-10">
-              <span class="text-8xl block mb-6">☕</span>
-              <p class="font-amatic text-[#F2C46D] text-4xl">¡Delicias recién preparadas!</p>
+
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+              <svg width="100%" height="100%"><filter id="innerGrain"><feTurbulence baseFrequency="0.9" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#innerGrain)"/></svg>
             </div>
           </div>
         </div>
+
         <div class="absolute -bottom-6 -left-6 w-full h-full border-2 border-[#F2C46D]/30 z-0 rounded-3xl"></div>
       </div>
 
