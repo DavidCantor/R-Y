@@ -94,7 +94,7 @@ const filteredDishes = computed(() => {
 
               <div class="flex items-center justify-between pt-4 border-t border-[#1D5948]/10">
                 <span class="font-amatic text-xl text-[#24735C]">Experienzzia Gourmet</span>
-                <a href="https://wa.me/TUNUMERO" class="bg-[#1D5948] text-[#F2C46D] p-3 rounded-full hover:bg-[#F2C46D] hover:text-[#1D5948] transition-colors shadow-lg">
+                <a target="_blank" href="https://wa.me/573004855722" class="bg-[#1D5948] text-[#F2C46D] p-3 rounded-full hover:bg-[#F2C46D] hover:text-[#1D5948] transition-colors shadow-lg">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

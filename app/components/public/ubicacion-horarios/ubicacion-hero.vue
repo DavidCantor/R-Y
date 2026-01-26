@@ -59,10 +59,7 @@ onMounted(() => {
           </div>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="#" class="bg-[#F2C46D] text-[#1D5948] px-10 py-5 rounded-full font-sans font-black uppercase text-[10px] tracking-widest hover:bg-white hover:scale-105 transition-all shadow-xl">
-              ¿Cómo llegar?
-            </a>
-            <a href="https://wa.me/TUNUMERO" class="border-2 border-[#F2C46D] text-[#F2C46D] px-10 py-5 rounded-full font-sans font-black uppercase text-[10px] tracking-widest hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all">
+            <a target="_blank" href="https://wa.me/573004855722" class="border-2 border-[#F2C46D] text-[#F2C46D] px-10 py-5 rounded-full font-sans font-black uppercase text-[10px] tracking-widest hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all">
                Reserva tu mesa
             </a>
           </div>
@@ -75,9 +72,9 @@ onMounted(() => {
             <div class="absolute inset-0 bg-[#F2C46D] -translate-x-4 -translate-y-4 rounded-br-[4rem] rounded-tl-[4rem] z-0 opacity-40"></div>
             
             <div class="relative z-10 overflow-hidden rounded-br-[4rem] rounded-tl-[4rem] aspect-square shadow-2xl border-2 border-white/20">
-              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800" 
+              <NuxtImg src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800" 
                    alt="Local Experienzzia Gourmet" 
-                   class="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-700">
+                   class="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-700" />
               
               <div class="absolute top-6 right-6 bg-green-500 text-white px-4 py-2 rounded-full font-sans font-black text-[9px] tracking-widest shadow-lg animate-pulse">
                 ABIERTO AHORA

@@ -71,7 +71,7 @@ const closeMenu = () => {
           </NuxtLink>
 
           <a href="https://wa.me/57XXXXXXXXXX" target="_blank"
-            class="bg-[#24735C] hover:bg-[#F2C46D] text-[#F2F2F2] hover:text-[#1D5948] px-6 lg:px-8 py-3 font-sans text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-full shadow-lg border border-[#F2C46D]/30">
+            class="bg-[#F2F2F2] hover:bg-[#F2C46D] text-[#1D5948] px-6 lg:px-8 py-3 font-sans text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-full shadow-lg border border-[#F2C46D]/30">
             Pide a Domicilio
           </a>
         </div>

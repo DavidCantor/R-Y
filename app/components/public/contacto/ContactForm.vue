@@ -48,7 +48,7 @@ onMounted(() => {
           <div class="flex gap-10">
             <div>
               <p class="text-[#F2C46D] font-black text-xs uppercase tracking-widest mb-2">WhatsApp</p>
-              <p class="text-white font-sans text-lg font-bold">+57 300 000 0000</p>
+              <p class="text-white font-sans text-lg font-bold">+57 300 485 5722</p>
             </div>
             <div>
               <p class="text-[#F2C46D] font-black text-xs uppercase tracking-widest mb-2">Ubicación</p>

@@ -53,7 +53,7 @@
           <h4 class="font-amatic text-[#F2C46D] text-3xl font-bold mb-6 tracking-wide">Domicilios</h4>
           <p class="font-sans text-[10px] uppercase tracking-[0.2em] mb-4 text-[#F2F2F2]/50">WhatsApp Directo:</p>
           <a 
-            href="https://wa.me/57XXXXXXXXXX" 
+            href="https://wa.me/573004855722" 
             target="_blank"
             class="inline-flex items-center space-x-3 bg-[#24735C] hover:bg-[#F2C46D] text-[#F2F2F2] hover:text-[#1D5948] font-bold py-4 px-6 rounded-2xl transition-all w-full justify-center shadow-2xl border border-[#F2C46D]/20 group"
           >

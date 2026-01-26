@@ -51,13 +51,13 @@ onMounted(() => {
           <div class="bg-white/5 backdrop-blur-sm p-8 md:p-12 rounded-[3rem] border border-white/10 shadow-2xl">
             <div class="flex flex-col gap-5">
               
-              <a href="https://wa.me/tu-numero"
+              <a href="https://wa.me/573004855722"
                 class="group relative flex items-center justify-center gap-3 px-8 py-6 bg-[#F2C46D] text-[#1D5948] font-sans font-black uppercase text-xs tracking-[0.2em] rounded-2xl transition-all hover:bg-white hover:scale-[1.02] active:scale-95 shadow-xl">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.82l.446.265c1.504.895 3.229 1.367 4.999 1.368 5.404 0 9.803-4.398 9.805-9.804.001-2.621-1.021-5.084-2.876-6.94s-4.32-2.877-6.94-2.877c-5.405 0-9.804 4.399-9.806 9.805-.001 1.83.479 3.618 1.39 5.162l.292.492-1.103 4.03 4.127-1.082z"/></svg>
                 Cotizar por WhatsApp
               </a>
 
-              <a href="tel:+57"
+              <a href="tel:+573004855722"
                 class="flex items-center justify-center gap-3 px-8 py-6 bg-transparent border-2 border-white/20 text-white font-sans font-black uppercase text-xs tracking-[0.2em] rounded-2xl transition-all hover:bg-white/10 hover:border-white">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 Atención Telefónica

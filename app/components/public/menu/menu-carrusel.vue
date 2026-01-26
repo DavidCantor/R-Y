@@ -135,7 +135,7 @@ onUnmounted(() => clearInterval(autoplayTimer))
                     <div class="w-7 h-7 md:w-8 md:h-8 rounded-full border-2 border-white bg-[#F2C46D] flex items-center justify-center text-[10px]">🔥</div>
                     <div class="w-7 h-7 md:w-8 md:h-8 rounded-full border-2 border-white bg-[#1D5948] flex items-center justify-center text-[10px] text-white">❤️</div>
                   </div>
-                  <a href="https://wa.me/TUNUMERO" class="flex items-center gap-1.5 font-sans font-black text-[9px] md:text-[10px] uppercase tracking-tighter text-[#1D5948]">
+                  <a target="_blank" href="https://wa.me/573004855722" class="flex items-center gap-1.5 font-sans font-black text-[9px] md:text-[10px] uppercase tracking-tighter text-[#1D5948]">
                     PEDIR <span class="group-hover:translate-x-1 transition-transform">→</span>
                   </a>
                 </div>

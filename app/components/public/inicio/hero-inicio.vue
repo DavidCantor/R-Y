@@ -35,7 +35,7 @@ onMounted(() => {
 
         <p :class="['font-sans text-lg md:text-xl text-[#F2F2F2]/90 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 transition-all duration-1000 delay-300 transform',
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10']">
-          En <span class="font-bold border-b-2 border-[#F2C46D]">Experienzzia Gourmet</span>, convertimos tus onces, meriendas y brunch en momentos llenos de calidez y tradición.
+          En <span class="font-bold">Experienzzia Gourmet</span>, convertimos tus onces, meriendas y brunch en momentos llenos de calidez y tradición.
         </p>
 
         <div :class="['flex flex-col sm:flex-row gap-5 justify-center lg:justify-start transition-all duration-1000 delay-400 transform',
@@ -46,7 +46,7 @@ onMounted(() => {
             Ver el Menú
           </NuxtLink>
           
-          <a href="https://wa.me/57XXXXXXXXXX" target="_blank"
+          <a href="https://wa.me/573004855722" target="_blank"
             class="px-10 py-4 border-2 border-[#F2C46D] text-[#F2C46D] font-sans font-extrabold uppercase tracking-widest text-xs rounded-full hover:bg-[#F2C46D] hover:text-[#1D5948] transition-all flex items-center justify-center gap-2">
             Pide tu Domicilio
           </a>
